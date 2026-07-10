@@ -20,9 +20,7 @@ Python script for automatically moving an MPI probe-station chuck and capturing 
 
 The script is intended for automated wafer/die(s)/calkit inspection, DUT mosaic creation, and long microscope acquisition sequences.
 
----
-
-## Features
+### Features
 
 - GPIB communication through `PyVISA`
 - Automatic chuck X/Y positioning

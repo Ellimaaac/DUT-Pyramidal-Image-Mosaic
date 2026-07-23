@@ -44,4 +44,7 @@ The script is intended for automated wafer/die(s)/calkit inspection, DUT mosaic 
 
 ## Stitching - Pyramidal Image
 
+
+## Visualise the Pyramidal Image
+
 ## Example

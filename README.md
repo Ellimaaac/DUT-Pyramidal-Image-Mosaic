@@ -3,6 +3,7 @@
 ---
 
 <h4 align="center">
+  <span> | </span>
   <a href="#mpi-wafer-probe-station-image-scanner"> MPI Wafer Probe Station Image Scanner</a>
   <span> | </span>
   <a href="#stitching---pyramidal-image">Stitching Pyramidal Image</a>

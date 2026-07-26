@@ -144,7 +144,7 @@ The reconstructed pyramidal image can now be explored using the OpenSeadragon vi
 
 This visualization is particularly useful for performing sanity checks and inspecting the different structures present on the DUT, whether it is a calibration kit, die, or wafer.
 
-By zooming in sufficiently, it is also possible to inspect fine details such as the contact marks left by the probes on the pads.
+By zooming in sufficiently, it is also possible to inspect fine details such as the contact marks left by the probes.
 
 <div align="center">
   <img src="img/5.png" width="600" alt="Files generated after the stitching process.">

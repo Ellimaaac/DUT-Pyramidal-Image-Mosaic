@@ -8,7 +8,7 @@
   <span> | </span>
   <a href="#stitching---pyramidal-image">Stitching Pyramidal Image</a>
   <span> | </span>
-  <a href="##visualize-the-pyramidal-image">Visualise the Pyramidal Image</a>
+  <a href="#visualize-the-pyramidal-image">Visualise the Pyramidal Image</a>
   <span> | </span>
   <a href="#example">Example</a>
   <span> | </span>

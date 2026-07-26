@@ -104,7 +104,7 @@ After the acquisition is complete, all captured images will be available in the 
 
 Once all images have been acquired, run `stitching_images.py` to reconstruct the complete image from the individual tiles.
 
-Depending on your configuration, the script will generate:
+The script will generate:
 
 - A folder containing the pyramidal image tiles, usually named `*_files`
 - A `.dzi` descriptor file

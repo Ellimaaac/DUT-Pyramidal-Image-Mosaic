@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>OpenSeadragon Viewer</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+</head>
+
+<body>
+  <div id="viewer" style="width:1650px; height:900px;"></div>
+
+  <script>
+    const viewer = OpenSeadragon({
+      id: "viewer",
+      prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/"
+    });
+
+    const images = [
+      "FULLWAFER_x_y_z.dzi",
+      "2026_FormFactor_143-033B.dzi"
+    ];
+
+    const columns = 2;      // nombre de colonnes
+    const tileWidth = 10;   // largeur des images
+    const gapX = 0.2;       // marge horizontale
+    const gapY = 0.05;      // marge verticale
+
+    function addImage(tileSource, x, y, width) {
+      return new Promise((resolve, reject) => {
+        viewer.addTiledImage({
+          tileSource: tileSource,
+          x: x,
+          y: y,
+          width: width,
+          success: function (event) {
+            const item = event.item;
+            const aspectRatio = item.source.aspectRatio;
+            const height = width / aspectRatio;
+
+            resolve(height);
+          },
+          error: reject
+        });
+      });
+    }
+
+    async function buildGrid() {
+      let currentY = 0;
+      for (let i = 0; i < images.length; i += columns) {
+        const row = images.slice(i, i + columns);
+        const heights = await Promise.all(
+          row.map((src, col) =>
+            addImage(
+              src,
+              col * (tileWidth + gapX),
+              currentY,
+              tileWidth
+            )
+          )
+        );
+        currentY += Math.max(...heights) + gapY;
+      }
+      viewer.viewport.goHome(true);
+    }
+    buildGrid();
+  </script>
+</body>
+</html>

@@ -48,6 +48,38 @@ The script is intended for automated wafer/die(s)/calkit inspection, DUT mosaic 
 ## Stitching - Pyramidal Image
 
 
-## Visualise the Pyramidal Image
+## Visualize the Pyramidal Image
+
+To visualize the pyramidal image with OpenSeadragon, open a terminal in the directory containing:
+* `index.html`
+* The `.dzi` files
+* Their associated tile folders, usually named `*_files`
+
+Start a local HTTP server using Python:
+
+```bash
+python -m http.server 8000
+```
+
+Then open the following address in your browser:
+
+```text
+http://localhost:8000/
+```
+
+The `index.html` file should open automatically. You can also access it directly at:
+
+```text
+http://localhost:8000/index.html
+```
+
+To stop the server, return to the terminal and press:
+
+```text
+Ctrl+C
+```
+
+Make sure that the `.dzi` files and their corresponding tile folders remain in the paths referenced by `index.html`.
+
 
 ## Example

@@ -95,10 +95,12 @@ Once your DUT (**CALKIT**, **DIE**, or **WAFER**) is placed in the probe station
 After the acquisition is complete, all captured images will be available in the configured output directory.
 
 <div align="center">
-  <img src="img/1.png" width="800" >
+  <img src="img/1.png" width="600" alt="Files generated after the stitching process.">
+    <br>
+  <em>Example showing the number of images captured by MPI.</em>
 </div>
 
-*Example showing the number of images captured by MPI.*
+
 
 Once all images have been acquired, run `stitching_images.py` to reconstruct the complete image from the individual tiles.
 
@@ -109,10 +111,12 @@ Depending on your configuration, the script will generate:
 - An `index.html` file used to display the image with OpenSeadragon
 
 <div align="center">
-  <img src="img/2.png" width="800" >
+  <img src="img/2.png" width="600" alt="Files generated after the stitching process.">
+  <br>
+  <em>Files generated after the stitching process.</em>
 </div>
 
-*Files generated after the stitching process.*
+
 
 Open a terminal in the directory containing the `.dzi` file, the `*_files` folder, and `index.html`, then start a local Python server:
 
@@ -126,25 +130,29 @@ http://localhost:8000/index.html
 ```
 The reconstructed pyramidal image can now be explored using the OpenSeadragon viewer.
 <div align="center">
-  <img src="img/3.png" width="800" >
+  <img src="img/3.png" width="600" alt="Files generated after the stitching process.">
+  <br>
+  <em>Reconstructed image displayed in the OpenSeadragon viewer.</em>
 </div>
-Reconstructed image displayed in the OpenSeadragon viewer.
+
 
 <div align="center">
-  <img src="img/4.png" width="800" >
+  <img src="img/4.png" width="600" alt="Files generated after the stitching process.">
+  <br>
+  <em>Comparison between the acquired calibration kit image and its datasheet representation.</em>
 </div>
 
-Comparison between the acquired calibration kit image and its datasheet representation.
 
 This visualization is particularly useful for performing sanity checks and inspecting the different structures present on the DUT, whether it is a calibration kit, die, or wafer.
 
 By zooming in sufficiently, it is also possible to inspect fine details such as the contact marks left by the probes on the pads.
 
 <div align="center">
-  <img src="img/5.png" width="800" >
+  <img src="img/5.png" width="600" alt="Files generated after the stitching process.">
+  <br>
+  <em>Example of probe contact marks visible when zooming in on the pyramidal image.</em>
 </div>
 
-*Example of probe contact marks visible when zooming in on the pyramidal image.*
 
 
 

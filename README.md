@@ -84,5 +84,65 @@ Ctrl+C
 
 Make sure that the `.dzi` files and their corresponding tile folders remain in the paths referenced by `index.html`.
 
+---
 
 ## Example
+
+Example using a calkit
+
+Once your DUT (**CALKIT**, **DIE**, or **WAFER**) is placed in the probe station, configure `MPI_take_images.py` according to your setup and run the script.
+
+After the acquisition is complete, all captured images will be available in the configured output directory.
+
+<div align="center">
+  <img src="img/1.png" width="800" >
+</div>
+
+*Example showing the number of images captured by MPI.*
+
+Once all images have been acquired, run `stitching_images.py` to reconstruct the complete image from the individual tiles.
+
+Depending on your configuration, the script will generate:
+
+- A folder containing the pyramidal image tiles, usually named `*_files`
+- A `.dzi` descriptor file
+- An `index.html` file used to display the image with OpenSeadragon
+
+<div align="center">
+  <img src="img/2.png" width="800" >
+</div>
+
+*Files generated after the stitching process.*
+
+Open a terminal in the directory containing the `.dzi` file, the `*_files` folder, and `index.html`, then start a local Python server:
+
+```bash
+python -m http.server 8000
+```
+
+Open the following address in your browser:
+```bash
+http://localhost:8000/index.html
+```
+The reconstructed pyramidal image can now be explored using the OpenSeadragon viewer.
+<div align="center">
+  <img src="img/3.png" width="800" >
+</div>
+Reconstructed image displayed in the OpenSeadragon viewer.
+
+<div align="center">
+  <img src="img/4.png" width="800" >
+</div>
+
+Comparison between the acquired calibration kit image and its datasheet representation.
+
+This visualization is particularly useful for performing sanity checks and inspecting the different structures present on the DUT, whether it is a calibration kit, die, or wafer.
+
+By zooming in sufficiently, it is also possible to inspect fine details such as the contact marks left by the probes on the pads.
+
+![Probe contact marks visible on the DUT](docs/images/probe-contact-marks.png)
+
+*Example of probe contact marks visible when zooming in on the pyramidal image.*
+
+
+

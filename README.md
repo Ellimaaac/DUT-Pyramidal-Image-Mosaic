@@ -95,7 +95,7 @@ Once your DUT (**CALKIT**, **DIE**, or **WAFER**) is placed in the probe station
 After the acquisition is complete, all captured images will be available in the configured output directory.
 
 <div align="center">
-  <img src="img/1.png" width="600" alt="Files generated after the stitching process.">
+  <img src="img/1.png" width="300" alt="Files generated after the stitching process.">
     <br>
   <em>Example showing the number of images captured by MPI.</em>
 </div>
@@ -110,7 +110,7 @@ The script will generate:
 - A `.dzi` descriptor file
 
 <div align="center">
-  <img src="img/2.png" width="600" alt="Files generated after the stitching process.">
+  <img src="img/2.png" width="300" alt="Files generated after the stitching process.">
   <br>
   <em>Files generated after the stitching process.</em>
 </div>
@@ -129,14 +129,14 @@ http://localhost:8000/index.html
 ```
 The reconstructed pyramidal image can now be explored using the OpenSeadragon viewer.
 <div align="center">
-  <img src="img/3.png" width="300" alt="Files generated after the stitching process.">
+  <img src="img/3.png" width="600" alt="Files generated after the stitching process.">
   <br>
   <em>Reconstructed image displayed in the OpenSeadragon viewer.</em>
 </div>
 
 
 <div align="center">
-  <img src="img/4.png" width="300" alt="Files generated after the stitching process.">
+  <img src="img/4.png" width="600" alt="Files generated after the stitching process.">
   <br>
   <em>Comparison between the acquired calibration kit image and its datasheet representation.</em>
 </div>

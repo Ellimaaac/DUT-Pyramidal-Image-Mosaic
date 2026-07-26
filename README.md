@@ -49,6 +49,8 @@ The script is intended for automated wafer/die(s)/calkit inspection, DUT mosaic 
 
 (On going : cleaning and merging codes)
 
+---
+
 ## Visualize the Pyramidal Image
 
 To visualize the pyramidal image with OpenSeadragon, open a terminal in the directory containing:

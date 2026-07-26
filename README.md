@@ -56,7 +56,6 @@ The script is intended for automated wafer/die(s)/calkit inspection, DUT mosaic 
 To visualize the pyramidal image with OpenSeadragon, open a terminal in the directory containing:
 * `index.html`
 * The `.dzi` files
-* Their associated tile folders, usually named `*_files`
 
 Start a local HTTP server using Python:
 

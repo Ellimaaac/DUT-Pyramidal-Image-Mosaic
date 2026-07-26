@@ -129,14 +129,14 @@ http://localhost:8000/index.html
 ```
 The reconstructed pyramidal image can now be explored using the OpenSeadragon viewer.
 <div align="center">
-  <img src="img/3.png" width="600" alt="Files generated after the stitching process.">
+  <img src="img/3.png" width="300" alt="Files generated after the stitching process.">
   <br>
   <em>Reconstructed image displayed in the OpenSeadragon viewer.</em>
 </div>
 
 
 <div align="center">
-  <img src="img/4.png" width="600" alt="Files generated after the stitching process.">
+  <img src="img/4.png" width="300" alt="Files generated after the stitching process.">
   <br>
   <em>Comparison between the acquired calibration kit image and its datasheet representation.</em>
 </div>

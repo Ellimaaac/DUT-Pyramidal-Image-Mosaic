@@ -140,7 +140,9 @@ This visualization is particularly useful for performing sanity checks and inspe
 
 By zooming in sufficiently, it is also possible to inspect fine details such as the contact marks left by the probes on the pads.
 
-![Probe contact marks visible on the DUT](docs/images/probe-contact-marks.png)
+<div align="center">
+  <img src="img/5.png" width="800" >
+</div>
 
 *Example of probe contact marks visible when zooming in on the pyramidal image.*
 

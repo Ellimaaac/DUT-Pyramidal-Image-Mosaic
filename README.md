@@ -47,7 +47,7 @@ The script is intended for automated wafer/die(s)/calkit inspection, DUT mosaic 
 
 ## Stitching - Pyramidal Image
 
-(On going : cleaning and merging codes)
+(On going : implementation of text detection)
 
 ---
 
